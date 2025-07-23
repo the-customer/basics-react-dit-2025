@@ -1,7 +1,15 @@
 import React from 'react'
+import styles from './ProductList.module.css';
 
-export default function ProductList() {
+
+
+export default function ProductList({children}) {
   return (
-    <div>ProductList</div>
+    <>
+      <h2>Our Products</h2>
+      <div className={styles.List}>
+        {children}
+      </div>
+    </>
   )
 }
